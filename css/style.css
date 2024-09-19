@@ -1,0 +1,883 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+/* Start Global */
+:root {
+    --primaryFont: 1.125rem;
+    --container-width: 83.33%;
+    --secondary-color: #3CAB90;
+    --section-padding: 80px 150px;
+}
+
+body {
+
+    font-family: "Inter", sans-serif;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    margin-inline: auto;
+}
+
+.title h2 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50.83px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #101828;
+}
+
+.title p {
+
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #475467;
+}
+
+.cardBody {
+    padding: 20px;
+}
+
+.cardBody h3 {
+
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #101828;
+}
+
+.cardBody p {
+    margin-block: 24px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: #475467;
+}
+
+.cardBody small {
+    color: var(--secondary-color);
+
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* End Global */
+
+/* Start nav */
+nav {
+    background-color: #0B9586;
+    padding: 16px 150px;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.linkAndCall {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+nav .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+nav i {
+    font-size: 2.5rem;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.logo {
+    width: 157px;
+}
+
+.logo img {
+    width: 100%;
+
+}
+
+.links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+nav ul a {
+    text-transform: capitalize;
+    color: white;
+
+    font-size: var(--primaryFont);
+    font-weight: 600;
+
+}
+
+nav ul li {
+    padding: 8px 28px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border-bottom: 3px solid transparent;
+    text-align: center;
+}
+
+nav ul li:hover {
+    background-color: #0a8c7e;
+
+    border-bottom: 3px solid rgba(0, 0, 0, 0.3)
+}
+
+nav .call p:first-child {
+    text-align: end;
+    font-size: var(--primaryFont);
+    margin: 0;
+}
+
+nav .call p:nth-child(2) {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* end nav */
+/* start header */
+
+.header {
+    background-image: url(../images/solar-panels-meadow\ 1.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    overflow: auto;
+}
+
+.header .firstPart {
+    position: absolute;
+    top: 155px;
+    left: 150px;
+    color: white;
+
+}
+
+.header .firstPart span:first-child {
+    display: inline-block;
+    margin-right: 10rem;
+    position: relative;
+
+}
+
+.header .firstPart span:first-child::before {
+    position: absolute;
+    content: '';
+    width: 8rem;
+    height: 0.2rem;
+    background-color: rgba(87, 87, 87, 1);
+    border-radius: 3.75px;
+    top: 8px;
+    left: 32px;
+
+}
+
+.header .firstPart span:first-child::after {
+    position: absolute;
+    content: '';
+    width: 3rem;
+    height: 0.2rem;
+    background-color: white;
+    border-radius: 3.75px;
+    top: 8px;
+    left: 32px;
+
+}
+
+.header .secondPart {
+    position: absolute;
+    top: 261px;
+    left: 150px;
+    color: white;
+    width: 45.5625rem;
+}
+
+.header .secondPart h1 {
+    font-size: 3.250rem;
+    font-weight: 600;
+    margin-bottom: 1.125rem;
+}
+
+.header .secondPart p {
+    margin-bottom: 1.125rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 30px;
+
+}
+
+.header .secondPart button:first-of-type {
+    width: 173px;
+    height: 41px;
+    padding: 12px 34px 12px 34px;
+    border-radius: 109px;
+    background: rgba(60, 171, 144, 1);
+    border: 0;
+    cursor: pointer;
+    margin-right: 1.5rem;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    letter-spacing: 0.08em;
+    color: white;
+}
+
+.header .secondPart button.request,
+section.greenSection .inner button {
+    width: 208px;
+    height: 41px;
+    padding: 12px 34px 12px 34px;
+    border-radius: 109px;
+    background-color: rgba(255, 187, 28, 1);
+    border: 0;
+    font-weight: 400;
+    line-height: 16.94px;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+}
+
+/* end header */
+/* start home */
+#home {
+    padding-block: 80px;
+    width: var(--container-width);
+}
+
+#home h2 {
+
+    font-size: 2.625rem;
+    font-weight: 600;
+    line-height: 50.83px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: rgba(16, 24, 40, 1);
+    margin-bottom: 24px;
+}
+
+#home p {
+    color: rgba(71, 84, 103, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#home ul li {
+    color: rgba(16, 24, 40, 1);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    ;
+}
+
+#home .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+#home .firstSide,
+#home .secondSide {
+    width: 49%;
+}
+
+#home ul span {
+    color: rgba(132, 189, 58, 1);
+}
+
+#home .imageContainer {
+    width: 469px;
+    margin-left: auto;
+}
+
+#home .imageContainer img {
+    width: 100%;
+}
+
+#home .imageHolder {
+    width: 40%;
+}
+
+#home .imageHolder img {
+    width: 100%;
+
+}
+
+#home .yellowBox {
+    background-color: rgba(255, 187, 28, 1);
+    position: absolute;
+    bottom: 35px;
+    border-radius: 12px;
+    padding: 24px 30px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20.95px;
+    letter-spacing: 0.9374999403953552px;
+    width: 266px;
+}
+
+#home .secondSide {
+    position: relative;
+}
+
+/* end home */
+/* start greenSection */
+section.greenSection {
+    background-image: url(../images/greenSection.png);
+    background-size: cover;
+    background-position: center center;
+    overflow: auto;
+    height: 505px;
+    position: relative;
+}
+
+section.greenSection .inner {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 15%;
+}
+
+section.greenSection .inner h2 {
+    font-size: 2.625rem;
+    font-weight: 600;
+    line-height: 50.83px;
+    letter-spacing: -0.02em;
+    color: white;
+}
+
+section.greenSection .inner p {
+
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 28px;
+    margin-block: 32px;
+    color: white;
+}
+
+/* end greenSection */
+/* start solar */
+#solar {
+    width: var(--container-width);
+    padding-block: 40px;
+}
+
+#solar .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 20px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+#solar .title p {
+    padding-inline: 24px;
+    margin-bottom: 40px;
+
+}
+
+#solar .card1 {
+    width: 30%;
+    -webkit-box-shadow: 0px 4px 30px 0px #0000000D;
+    box-shadow: 0px 4px 30px 0px #0000000D;
+
+}
+
+#solar .card1 img {
+    width: 100%;
+    display: block;
+}
+
+/* end solar */
+/* start repair */
+section#repair {
+    background-image: url(../images/repair.png);
+    background-size: cover;
+    background-position: center center;
+    overflow: auto;
+    height: 505px;
+    position: relative;
+}
+
+section#repair .inner {
+    background-color: #00000091;
+    width: 75%;
+    padding: 44px;
+    border-radius: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+section#repair .inner h2 {
+
+    font-size: 2.625rem;
+    font-weight: 600;
+    line-height: 50.83px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+section#repair .inner p {
+
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+}
+
+/* end repair */
+/* start energy */
+
+section#energy {
+    background-color: #FFBB1C0D;
+}
+
+section#energy .container {
+
+    margin-inline: auto;
+    padding: var(--section-padding);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+section#energy .firstPart {
+    width: 30%;
+}
+
+section#energy h2 {
+
+    font-size: 2.625rem;
+    font-weight: 600;
+    line-height: 50.83px;
+    letter-spacing: -0.02em;
+    color: #101828;
+    margin-block: 24px;
+}
+
+section#energy p {
+
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 28px;
+    color: #475467;
+}
+
+section#energy .iconContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    width: 56px;
+    height: 56px;
+    padding: 16px;
+
+
+    border-radius: 10px;
+    outline: 21px solid #3CAB9026;
+
+
+}
+
+section#energy .secondPart {
+    width: 65%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+section#energy .secondPart .card {
+    border: 1px solid #3CAB90;
+    width: 48%;
+    background-color: #3CAB900D;
+
+    padding: 24px;
+
+    border-radius: 12px;
+
+}
+
+section#energy .secondPart .card span {
+    text-decoration: underline;
+}
+
+section#energy .secondPart .cover {
+
+    padding: 10px;
+
+    border-radius: 10px;
+    background-color: #3CAB9026;
+}
+
+section#energy .secondPart .cover .imageHolder {
+    width: 80%;
+    margin-inline: auto;
+}
+
+section#energy .secondPart .cover .imageHolder img {
+    width: 100%;
+}
+
+/* end energy */
+/* start values */
+section#values .container {
+    padding: var(--section-padding);
+}
+
+section#values .container .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+section#values .card {
+    width: 30%;
+    padding: 32px;
+    border-radius: 12px;
+    border: 1px solid #3CAB90;
+    background-color: #3CAB900D;
+    margin-top: 32px;
+}
+
+section#values .container .cards .card .cardBody {
+    padding: 0;
+    margin-top: 10px;
+}
+
+section#values .container .cards .card .imageContainer {
+    width: 70px;
+    height: 70px;
+}
+
+section#values .container .cards .card .imageContainer img {
+    width: 100%;
+}
+
+/* end values */
+/* start say  */
+section#say .container {
+    padding: var(--section-padding);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+section#say .container .firstPart {
+    width: 30%;
+}
+
+section#say .container h2 {
+
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 64px;
+    color: #1C1C1C;
+    margin-bottom: 28px;
+}
+
+section#say .container p {
+
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #1C1C1C;
+}
+
+section#say .container .secondPart {
+    width: 65%;
+    padding: 40px;
+    background-color: #3CAB900F;
+    border-radius: 24px;
+}
+
+section#say .container .secondPart .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 52px;
+}
+
+section#say .container .secondPart .top small {
+    color: #3CAB90;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 20.16px;
+
+
+}
+
+section#say .container .secondPart .middle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 36px;
+    color: #101828;
+    margin-bottom: 87px;
+}
+
+section#say .container .secondPart .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+section#say .container .secondPart .footer .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+section#say .container .secondPart .footer .info .imageContainer {
+    padding-right: 10px;
+}
+
+/* end say  */
+/* start footer */
+footer {
+
+    background-color: #283646;
+}
+
+footer .container {
+    padding: 54px;
+}
+
+footer .container .firstPart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #71777D;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+footer .firstPart ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+footer .firstPart ul li {
+    padding-right: 20px;
+}
+
+footer .firstPart ul a {
+    color: white;
+
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.30000001192092896px;
+    text-transform: capitalize;
+}
+
+footer .firstPart .imageContainer {
+    width: 50%;
+    margin-bottom: 38px;
+}
+
+footer .firstPart .imageContainer img {
+    width: 100%;
+    display: block;
+}
+
+footer .firstPart .box2 label {
+    display: block;
+
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.30000001192092896px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer .secondPart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: #92989F;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.2571428716182709px;
+
+}
+
+footer .firstPart input {
+    width: 406px;
+    padding: 15px;
+    background-color: #FFFFFF17;
+    border: 1px solid #B3BDC7;
+    border-radius: 38px;
+    outline: 0;
+    color: white;
+}
+
+footer .firstPart button {
+
+    padding: 12px 37px;
+    background-color: #FFBB1C;
+    border-radius: 109px;
+    border: 0;
+    right: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.30000001192092896px;
+    text-align: center;
+    color: white;
+    position: absolute;
+}
+
+footer .firstPart input:-moz-placeholder-shown {
+    color: white;
+}
+
+footer .firstPart input:-ms-input-placeholder {
+    color: white;
+}
+
+footer .firstPart input:placeholder-shown {
+    color: white;
+}
+
+footer form {
+    position: relative;
+}
+
+
+
+/* end footer */

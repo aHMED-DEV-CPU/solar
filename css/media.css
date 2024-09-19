@@ -1,0 +1,255 @@
+
+
+/* Extra Large Devices */
+@media (min-width: 1280px) {
+    /* styles for large screens */
+}
+
+/* Large Devices */
+@media (min-width: 992px) and (max-width: 1279px) {
+    nav .call p:nth-child(2) {
+        font-size: 1rem;
+
+    }
+
+    nav {
+        padding-inline: 100px;
+    }
+
+    #home .firstSide,
+    #home .secondSide {
+        width: 100%;
+    }
+
+    #home .secondSide {
+        margin: 10px auto 0;
+    }
+
+    section#energy .secondPart,
+    section#energy .firstPart {
+        width: 100%;
+    }
+}
+
+/* Medium Devices */
+@media (max-width: 991px) {
+    .linkAndCall {
+        background-color: #0a8c7e;
+        display: none;
+        padding: 5px;
+    }
+
+    nav {
+        padding-inline: 20px;
+    }
+
+
+
+    nav .container:hover .linkAndCall {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        position: absolute;
+        top: 69px;
+        left: 0;
+        width: 100%;
+    }
+
+    nav .container:hover:after {
+        position: absolute;
+        content: "";
+        border: 27px solid;
+        border-color: transparent transparent #0a8c7e transparent;
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+        right: 5px;
+        top: 47px;
+    }
+
+    .linkAndCall ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul a {
+        font-size: 1.5rem;
+    }
+
+    nav .call p:first-child {
+        text-align: center;
+    }
+
+
+
+    html {
+        font-size: 12px;
+    }
+
+    nav i {
+        font-size: 2.5rem;
+        visibility: visible;
+    }
+
+    #home .firstSide,
+    #home .secondSide {
+        width: 100%;
+    }
+
+    #home .secondSide {
+        margin: 10px auto 0;
+    }
+
+    #solar .cards,
+    section#values .card {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+
+    }
+
+    #solar .card1,
+    section#values .card {
+        width: 48%;
+    }
+
+    section#energy .secondPart,
+    section#energy .firstPart {
+        width: 100%;
+    }
+
+    section#say .container .secondPart,
+    section#say .container .firstPart {
+        width: 100%;
+    }
+
+    footer .container .firstPart {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    footer .firstPart .imageContainer {
+        margin-inline: auto;
+    }
+
+    footer label {
+        text-align: center;
+    }
+
+    footer .firstPart input {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .firstPart span:first-child::before {
+
+        top: 6px;
+        left: 26px;
+
+    }
+
+    .header .firstPart span:first-child::after {
+
+        top: 6px;
+        left: 26px;
+
+    }
+
+    .header .secondPart,
+    .header .firstPart {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    .header .secondPart {
+        width: 30rem;
+        text-align: center;
+    }
+
+    .header .secondPart button:first-of-type {
+        margin: 0 auto 20px;
+    }
+
+    #home .firstSide,
+    #home .secondSide {
+        width: 100%;
+    }
+
+    #home .secondSide {
+        margin: 10px auto 0;
+    }
+
+    #home .secondSide .imageContainer {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    #home .yellowBox {
+        display: none;
+    }
+
+    #solar .card1,
+    section#values .card {
+        width: 100%;
+    }
+
+    section#repair .inner {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    section#energy .secondPart,
+    section#energy .firstPart {
+        width: 100%;
+    }
+
+    section#energy .secondPart .card {
+        width: 100%;
+    }
+
+    section#energy .container,
+    section#values .container,
+    section#say .container {
+        padding-inline: 50px;
+    }
+
+    section#say .container .secondPart,
+    section#say .container .firstPart {
+        width: 100%;
+    }
+
+    footer .secondPart {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 545px) {
+    section#say .container .secondPart .footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
